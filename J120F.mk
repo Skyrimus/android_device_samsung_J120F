@@ -191,7 +191,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_profiles.xml:system/etc/media_profiles.xml
 
-PRODUCT_NAME := SM
+PRODUCT_NAME := cm_J120F
 PRODUCT_DEVICE := J120F
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
@@ -202,14 +202,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/sec_touchkey.kl:/system/usr/keylayout/sec_touchkey.kl \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:/system/usr/keylayout/gpio-keys.kl
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/J120F.mk \
-    $(LOCAL_DIR)/Android.mk \
-    $(LOCAL_DIR)/AndroidProducts.mk \
-    $(LOCAL_DIR)/BoardConfig.mk \
-    $(LOCAL_DIR)/cm.mk \
-    $(LOCAL_DIR)/full_J120F.mk
-
 
 $(call inherit-product-if-exists, vendor/samsung/vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -219,14 +211,6 @@ $(call inherit-product, vendor/samsung/J120F/vendor.mk)
 USE_NINJA := true
 
 -include $(LOCAL_PATH)/system.prop
-
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/J120F.mk \
-    $(LOCAL_DIR)/Android.mk \
-    $(LOCAL_DIR)/AndroidProducts.mk \
-    $(LOCAL_DIR)/BoardConfig.mk \
-    $(LOCAL_DIR)/cm.mk \
-    $(LOCAL_DIR)/full_J120F.mk
 
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/zImage:kernel
