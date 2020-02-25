@@ -1,4 +1,4 @@
-add_lunch_combo J120F-user
-add_lunch_combo J120F-userdebug
-add_lunch_combo J120F-eng
+add_lunch_combo cm_J120F-user
+add_lunch_combo cm_J120F-userdebug
+add_lunch_combo cm_J120F-eng
 
